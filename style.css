@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Squada One";
+}
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(106, 62, 131);
+  mix-blend-mode: overlay;
+}
+.showcase header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 40px 50px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 span {
+  font-size: 20px;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  left: 15px;
+  bottom: 15px;
+  background: url("m7.png");
+  background-repeat: no-repeat;
+  filter: invert(1);
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.ig {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+.linkedin {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 50px;
+}
+.toggle.active {
+  background: url("m7.png");
+  /* <!-- edit later --> */
+  background-repeat: no-repeat;
+  filter: invert(1);
+  background-size: 20px;
+  background-position: center;
+}
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.text {
+  position: absolute;
+  z-index: 10;
+  font-size: 45px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-top: 70px;
+  left: 55px;
+}
+.text h3 {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+  z-index: 200;
+}
+.text a {
+  display: inline-block;
+  font-size: 0.5em;
+  background: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.text a:hover {
+  letter-spacing: 6px;
+}
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 55px;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.9) translateY(-15px);
+}
+@media (max-width: 600px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h3 {
+    font-size: 1.5em;
+  }
+}
